@@ -2,24 +2,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-image: url('images/min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 header {
-    background: linear-gradient(to right, #3690ff, white);
-    color: white;
+    background-color: white;
+    color: gray;
     padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease-in-out; 
 }
 
-header.scrolled {
-    background-color: #df2e16;
+header.hide {
+    transform: translateY(-100%);
 }
 
 header h1 {
@@ -39,13 +41,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: white;
+    color: gray;
     font-size: 1.1em;
     transform: scale(1.1);
 }
@@ -56,10 +58,8 @@ section {
 
 footer {
     padding: 20px;
-    background-color: 
-    #3690ff
-    ;
-    color: white;
+    background-color: white;
+    color: gray;
     text-align: center;
     margin-top: 30px;
     border-top: 1px solid white;
@@ -90,23 +90,23 @@ footer.scrolled {
 }
 
 .project {
-    padding: 20px;
-    background-color: transparent;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    flex: 0 0 100%; 
+    max-width: 100%;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
-}
 
 .project h3 {
     font-size: 1.3em;
     color: #333;
     margin-bottom: 15px;
+    
+}
+
+.project h3, .project p {
+    margin: 10px 0;
 }
 
 .project p {
@@ -126,22 +126,22 @@ footer.scrolled {
 }
 
 .project a:hover {
-    background-color: white;
+    background-color: transparent;
     color: #333;
     transform: scale(1.05);
 }
 
 .project img {
-    width: 100%;
-    height: auto;
+    width: 70%; 
+    height: 350px;
+    object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-.project img:hover {
-    transform: scale(1.1);
+
+.projects-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -150,40 +150,46 @@ footer.scrolled {
     margin-left: 20px;
     margin-right: 20px;
     padding: 40px 0;
-    background-color: white;
+    background-color: transparent;
 }
 
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-    justify-items: center;
-    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 
 .card {
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    visibility: visible;
+    width: 350px;
+    height: 200px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    font-style: italic;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative;
+    z-index: 1; 
 }
-
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    z-index: 10; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
-    background-color: #8fc1ff;
+    background-color: gray; 
+    opacity: 0.82;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .card-header h3 {
@@ -192,12 +198,12 @@ footer.scrolled {
 }
 
 .card-body {
-    padding: 20px;
-    font-size: 1em;
-    color: #666;
-    text-align: center;
-    background-color: transparent;
-    
+    padding: 10px;
+    font-size: 0.9em;
+    height: 80px; 
+    overflow: hidden;
+    transition: height 0.3s ease; 
+    font-size: large;
 }
 
 
@@ -207,7 +213,11 @@ footer.scrolled {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-body {
+    height: 150px; 
 }
 
 .card {
@@ -219,4 +229,60 @@ footer.scrolled {
 .card.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+#contact{
+    background-color: transparent;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.slider-container {
+    position: relative;
+    width: 50%; 
+    margin: auto;
+    overflow: hidden;
+    height: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.slider-btn:hover {
+    background-color: wheat;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+#contact a {
+    color: #0077b5; 
+    text-decoration: none; 
+}
+
+#contact a:hover {
+    color: #005582; 
+    text-decoration: underline;
 }
