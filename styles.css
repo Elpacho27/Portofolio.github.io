@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-image: linear-gradient(horizontal,black, white);
     color: gray;
     padding: 20px;
     position: fixed;
@@ -22,6 +22,7 @@ header {
 
 header a{
     font-weight: bolder;
+    
 }
 
 header.hide {
@@ -32,6 +33,7 @@ header h1 {
     font-size: 2em;
     margin: 0;
     display: inline-block;
+    color: white;
 }
 
 nav ul {
@@ -45,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -227,6 +229,7 @@ footer.scrolled {
 
 .card:hover .card-body {
     height: 150px; 
+    background-color: white;
 }
 
 .card {
