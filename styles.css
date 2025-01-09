@@ -282,7 +282,7 @@ footer.scrolled {
 
 
 .slider-btn:hover {
-    background-color: wheat;
+    background-color: white;
 }
 
 .prev-btn {
@@ -409,6 +409,23 @@ footer.scrolled {
 .skill i{
     font-size: large;
 }
+
+.white-text {
+    color: white;
+  }
+
+  .black-text {
+    color: #0077b5;
+  }
+
+  .black-text a {
+    color: #0077b5; 
+    text-decoration: none;
+  }
+
+  .black-text a:hover {
+    text-decoration: underline; 
+  }
 
 
 /*@media screen and (max-width: 468px) {
