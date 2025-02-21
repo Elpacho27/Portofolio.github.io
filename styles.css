@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(horizontal,black, white);
+    background-image: linear-gradient(horizontal, black, white);
     color: gray;
     padding: 20px;
     position: fixed;
@@ -17,12 +17,12 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
-header a{
+header a {
     font-weight: bolder;
-    
+
 }
 
 header.hide {
@@ -92,15 +92,15 @@ footer.scrolled {
     gap: 30px;
     margin-top: 30px;
     padding: 0 10%;
-  
+
 }
 
-#projects h2{
+#projects h2 {
     color: white;
 }
 
 .project {
-    flex: 0 0 100%; 
+    flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
     padding: 20px;
@@ -112,10 +112,11 @@ footer.scrolled {
     font-size: 1.3em;
     color: #333;
     margin-bottom: 15px;
-    
+
 }
 
-.project h3, .project p {
+.project h3,
+.project p {
     margin: 10px 0;
 }
 
@@ -142,7 +143,7 @@ footer.scrolled {
 }
 
 .project img {
-    width: 70%; 
+    width: 70%;
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
@@ -175,25 +176,26 @@ footer.scrolled {
 
 .card {
     width: 350px;
-    height: 200px; 
+    height: 200px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
     /*transition: transform 0.3s ease, box-shadow 0.3s ease; */
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
+
 .card:hover {
     transform: scale(1.1);
-    z-index: 10; 
+    z-index: 10;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
-    background-color: white; 
+    background-color: white;
     opacity: 0.9;
     color: gray;
     padding: 10px;
@@ -210,9 +212,9 @@ footer.scrolled {
 .card-body {
     padding: 10px;
     font-size: 0.9em;
-    height: 80px; 
+    height: 80px;
     overflow: hidden;
-    transition: height 0.3s ease; 
+    transition: height 0.3s ease;
     font-size: large;
     color: gray;
 }
@@ -228,7 +230,7 @@ footer.scrolled {
 }
 
 .card:hover .card-body {
-    height: 150px; 
+    height: 150px;
     background-color: white;
 }
 
@@ -243,11 +245,11 @@ footer.scrolled {
     transform: translateY(0);
 }
 
-#contact{
+#contact {
     background-color: transparent;
 }
 
-#contact h2{
+#contact h2 {
     color: white;
 }
 
@@ -268,10 +270,10 @@ footer.scrolled {
 
 .slider-container {
     position: relative;
-    width: 50%; 
+    width: 50%;
     margin: auto;
     overflow: hidden;
-    height: 80%; 
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,12 +296,12 @@ footer.scrolled {
 }
 
 #contact a {
-    color: #0077b5; 
-    text-decoration: none; 
+    color: #0077b5;
+    text-decoration: none;
 }
 
 #contact a:hover {
-    color: #005582; 
+    color: #005582;
     text-decoration: underline;
 }
 
@@ -307,8 +309,8 @@ footer.scrolled {
 .experience-container {
     display: flex;
     justify-content: center;
-    gap: 40px; 
-    
+    gap: 40px;
+
 }
 
 
@@ -324,7 +326,7 @@ footer.scrolled {
 
 
 .experience-card:hover {
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -352,7 +354,7 @@ footer.scrolled {
 }
 
 .experience-card span {
-    color: #0077b5; 
+    color: #0077b5;
     font-size: 1.2em;
     margin-right: 10px;
 }
@@ -369,35 +371,35 @@ footer.scrolled {
 }
 
 #abouttwo {
-    margin-top: 100px; 
+    margin-top: 100px;
     height: 200px;
 }
 
-#abouttwo h2{
+#abouttwo h2 {
     color: white;
 }
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 15px; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     margin-top: 20px;
 }
 
 
 .skill {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 14px;
     font-weight: 500;
     color: #333;
-    text-align: left; 
+    text-align: left;
 }
 
 .skill span {
-    font-size: 20px; 
-    color: #4CAF50; 
+    font-size: 20px;
+    color: #4CAF50;
 }
 
 .skill p {
@@ -406,26 +408,49 @@ footer.scrolled {
     color: #777;
 }
 
-.skill i{
+.skill i {
     font-size: large;
 }
 
 .white-text {
     color: white;
-  }
+}
 
-  .black-text {
+.black-text {
     color: #0077b5;
-  }
+}
 
-  .black-text a {
-    color: #0077b5; 
+.black-text a {
+    color: #0077b5;
     text-decoration: none;
-  }
+}
 
-  .black-text a:hover {
-    text-decoration: underline; 
-  }
+.black-text a:hover {
+    text-decoration: underline;
+}
+
+.swiper {
+    width: 80%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 
 /*@media screen and (max-width: 468px) {
