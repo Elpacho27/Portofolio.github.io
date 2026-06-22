@@ -1,171 +1,471 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrik's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-</head>
+    <title>Patrik Ocelić | Mobile & Full Stack Developer</title>
 
-<body>
-    <header>
-        <h1>Patrik Ocelić</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+    <meta
+      name="description"
+      content="Portfolio of Patrik Ocelić - Mobile and Full Stack Developer specialized in Flutter, .NET and modern web technologies."
+    />
+
+    <meta
+      name="keywords"
+      content="Patrik Ocelić, Flutter Developer, .NET Developer, C#, JavaScript, Portfolio"
+    />
+
+    <meta name="author" content="Patrik Ocelić" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo"> Patrik <span>Ocelić</span> </a>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#about"> About </a>
+            </li>
+
+            <li>
+              <a href="#skills"> Skills </a>
+            </li>
+
+            <li>
+              <a href="#projects"> Projects </a>
+            </li>
+
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
         </nav>
+
+        <button class="menu-button" aria-label="Open navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
     </header>
-    <section id="abouttwo">
-        <h2>SKILLS</h2>
-        <div class="experience-container">
 
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <figure class="hero__image">
+            <img src="images/profile.jpeg" alt="Portrait of Patrik Ocelić" />
+          </figure>
 
-            <div class="experience-card">
-                <h3>FRONTEND</h3>
-                <div class="skills">
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>HTML</strong>
-                        <p>Experienced</p>
-                    </div>
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>CSS</strong>
-                        <p>Experienced</p>
-                    </div>
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>JavaScript</strong>
-                        <p>Experienced</p>
-                    </div>
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>Flutter</strong>
-                        <p>Experienced</p>
-                    </div>
-                </div>
+          <article class="hero__content">
+            <p class="hero__subtitle">Hello, I'm</p>
+
+            <h1>Patrik Ocelić</h1>
+
+            <h2>Mobile & Full Stack Developer</h2>
+
+            <p class="hero__description">
+              I build modern mobile and web applications using Flutter, .NET,
+              C#, JavaScript and REST APIs. I enjoy creating scalable software,
+              intuitive user experiences and clean, maintainable code.
+            </p>
+
+            <ul class="hero__tech-list">
+              <li>Flutter</li>
+              <li>.NET</li>
+              <li>C#</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+
+            <div class="hero__actions">
+              <a href="#projects" class="button button--primary">
+                View Projects
+              </a>
+
+              <a href="#contact" class="button button--secondary">
+                Contact Me
+              </a>
             </div>
 
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/Elpacho27" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
 
-            <div class="experience-card">
-                <h3>BACKEND </h3>
-                <div class="skills">
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>Java</strong>
-                        <p>Intermediate</p>
-                    </div>
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>C#</strong>
-                        <p>Experienced</p>
-                    </div>
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>Kotlin</strong>
-                        <p>Experienced</p>
-                    </div>
-                    <div class="skill"><i class="bi bi-patch-check-fill"></i><strong>Git</strong>
-                        <p>Experienced</p>
-                    </div>
-                </div>
-            </div>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/patrik-oceli%C4%87-635b96309/"
+                  target="_blank"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:patrik27ocelic03@gmail.com">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
         </div>
-    </section>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-subtitle">Get To Know Me</p>
 
+            <h2 class="section-title">About Me</h2>
+          </header>
 
-    <section id="about">
-        <h2>ABOUT ME</h2>
-        <div class="card-container">
+          <div class="about__container">
+            <article class="about__content">
+              <h3>Mobile & Full Stack Developer</h3>
 
-            <div class="card">
-                <div class="card-header">
-                    <h3>EDUCATION</h3>
-                </div>
-                <div class="card-body">
-                    <p>Master's Degree in Computer Science at FERIT</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <h3>EXPERIENCE</h3>
-                </div>
-                <div class="card-body">
-                    <p>Currently developing Mobile/Flutter applications at Mono(fulltime).</p>
-                    <p>Internship in Telecommunications(ENEA) and Automation(Danieli Systec)</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <h3>INTERESTS</h3>
-                </div>
-                <div class="card-body">
-                    <p>Technology, Programming, Innovation, Football...</p>
-                </div>
-            </div>
+              <p>
+                I hold a 5-year Master's degree in Computer Science from FERIT.
+              </p>
+              <p>I currently work as a Frontend Developer at IBM iX.</p>
+              <p>
+                I enjoy building modern mobile and web applications using
+                Flutter, .NET, JavaScript and REST APIs. My goal is to create
+                software that is scalable, maintainable and provides an
+                excellent user experience.
+              </p>
+
+              <p>
+                Besides programming, I enjoy football, kickboxing and learning
+                new technologies.
+              </p>
+            </article>
+
+            <aside class="about__cards">
+              <article class="info-card">
+                <i class="bi bi-mortarboard-fill"></i>
+
+                <h3>Education</h3>
+
+                <p>Master's Degree</p>
+
+                <span> FERIT Osijek </span>
+              </article>
+
+              <article class="info-card">
+                <i class="bi bi-briefcase-fill"></i>
+
+                <h3>Experience</h3>
+
+                <p>Frontend Developer</p>
+
+                <span> IBM iX </span>
+              </article>
+
+              <article class="info-card">
+                <i class="bi bi-code-slash"></i>
+
+                <h3>Projects</h3>
+
+                <p>10+</p>
+
+                <span> Personal & University </span>
+              </article>
+            </aside>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="projects">
-        <h2>MY PROJECTS</h2>
-        <div class="slider-container">
-            <button class="slider-btn prev-btn">&#10094;</button>
-            <div class="projects-slider">
-                <div class="project">
-                    <img src="images/fitnessbg.jpg" alt="Fitness Centar">
-                    <h3>ROFit </h3>
-                    <p style="font-size: small;">ROFit is a full-stack fitness application that combines workout planning, nutrition tracking, real-time chat, and push notifications into a single platform.</p>
-                    <a href="https://github.com/Elpacho27/ROFit" target="_blank">VIEW PROJECT</a>
-                </div>
-                <div class="project">
-                    <img src="images/watch.jpg" alt="Watches Webshop">
-                    <h3>WATCHES WEBSHOP</h3>
-                    <p>A page for viewing and purchasing wristwatches.</p>
-                    <a href="https://github.com/Elpacho27/WatchesWebShop" target="_blank">VIEW PROJECT</a>
-                </div>
-                <div class="project">
-                    <img src="images/dm.jpg" alt="Driver Monitoring">
-                    <h3>DRIVER MONITORING</h3>
-                    <p>An application for monitoring, controlling, and alerting drivers.</p>
-                    <a href="https://github.com/Elpacho27/DriverMonitoring" target="_blank">VIEW PROJECT</a>
-                </div>
-                <div class="project">
-                    <img src="images/fantasy.jpg" alt="Bundesliga Fantasy">
-                    <h3>BUNDESLIGA FANTASY</h3>
-                    <p>A mobile application/game that simulates the job of a coach.</p>
-                    <a href="https://github.com/Elpacho27/Bundesliga-Fantasy" target="_blank">VIEW PROJECT</a>
-                </div>
-                <div class="project">
-                    <img src="images/weather.jpg" alt="Weather Forecast">
-                    <h3>WEATHER FORECAST</h3>
-                    <p>A mobile application for weather forecasting.</p>
-                    <a href="https://github.com/Elpacho27/WeatherAPP" target="_blank">VIEW PROJECT</a>
-                </div>
-                <div class="project">
-                    <img src="images/top-view-businesspeople-paying-attention.jpg" alt="Avalonia App">
-                    <h3>WORKSTATION MANAGER</h3>
-                    <p>Desktop Avalonia .NET 8 application for managing workstations(HR Manager) in production.</p>
-                    <a href="https://github.com/Elpacho27/WorkstationManager" target="_blank">VIEW PROJECT</a>
-                </div>
+      <section id="skills" class="skills">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-subtitle">Technologies</p>
 
-            </div>
-            <button class="slider-btn next-btn">&#10095;</button>
+            <h2 class="section-title">My Tech Stack</h2>
+          </header>
+
+          <div class="skills__grid">
+            <article class="skills-card">
+              <h3>Frontend</h3>
+
+              <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Flutter</li>
+                <li>Responsive Design</li>
+              </ul>
+            </article>
+
+            <article class="skills-card">
+              <h3>Backend</h3>
+
+              <ul class="skills-list">
+                <li>C#</li>
+                <li>.NET</li>
+                <li>Java</li>
+                <li>REST API</li>
+              </ul>
+            </article>
+
+            <article class="skills-card">
+              <h3>Databases & Tools</h3>
+
+              <ul class="skills-list">
+                <li>SQL</li>
+                <li>Firebase</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Visual Studio</li>
+              </ul>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
+      <section id="projects" class="projects">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-subtitle">My Recent Work</p>
 
+            <h2 class="section-title">Featured Projects</h2>
+          </header>
 
-    <section id="contact">
-        <h2>CONTACT</h2>
-        <p>
-            <span class="white-text">Feel free to contact me at</span>
-            <span class="black-text">patrik27ocelic03@gmail.com</span>
-            <span class="white-text">or</span>
-            <span class="black-text"><a href="https://www.linkedin.com/in/patrik-oceli%C4%87-635b96309/">my
-                    LinkedIn</a></span>
+          <div class="projects__grid">
+            <article class="project-card">
+              <figure>
+                <img src="images/fitnessbg.jpg" alt="ROFit application" />
+              </figure>
 
-            </span>
-        </p>
-    </section>
+              <div class="project-card__content">
+                <h3>ROFit</h3>
 
+                <p>
+                  Full-stack fitness platform featuring workout planning,
+                  nutrition tracking, chat, push notifications and user
+                  management.
+                </p>
 
-    <footer>
-        <p>&copy; 2026 Patrik Ocelić</p>
+                <ul class="project-tags">
+                  <li>Flutter</li>
+                  <li>.NET</li>
+                  <li>Firebase</li>
+                </ul>
+
+                <a
+                  href="https://github.com/Elpacho27/ROFit"
+                  target="_blank"
+                  class="button button--small"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure>
+                <img src="images/watch.jpg" alt="Watches webshop" />
+              </figure>
+
+              <div class="project-card__content">
+                <h3>Watches Webshop</h3>
+
+                <p>
+                  Responsive e-commerce website for browsing and purchasing
+                  luxury watches.
+                </p>
+
+                <ul class="project-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <a
+                  href="https://github.com/Elpacho27/WatchesWebShop"
+                  target="_blank"
+                  class="button button--small"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure>
+                <img src="images/dm.jpg" alt="Driver Monitoring" />
+              </figure>
+
+              <div class="project-card__content">
+                <h3>Driver Monitoring</h3>
+
+                <p>
+                  Mobile application for monitoring driver behaviour with
+                  real-time notifications and alerts.
+                </p>
+
+                <ul class="project-tags">
+                  <li>Flutter</li>
+                  <li>Firebase</li>
+                </ul>
+
+                <a
+                  href="https://github.com/Elpacho27/DriverMonitoring"
+                  target="_blank"
+                  class="button button--small"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure>
+                <img src="images/fantasy.jpg" alt="Bundesliga Fantasy" />
+              </figure>
+
+              <div class="project-card__content">
+                <h3>Bundesliga Fantasy</h3>
+
+                <p>
+                  Fantasy football mobile application inspired by real football
+                  management.
+                </p>
+
+                <ul class="project-tags">
+                  <li>Flutter</li>
+                  <li>Firebase</li>
+                </ul>
+
+                <a
+                  href="https://github.com/Elpacho27/Bundesliga-Fantasy"
+                  target="_blank"
+                  class="button button--small"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure>
+                <img src="images/weather.jpg" alt="Weather App" />
+              </figure>
+
+              <div class="project-card__content">
+                <h3>Weather Forecast</h3>
+
+                <p>
+                  Weather forecasting application consuming REST APIs with
+                  modern Flutter UI.
+                </p>
+
+                <ul class="project-tags">
+                  <li>Flutter</li>
+                  <li>REST API</li>
+                </ul>
+
+                <a
+                  href="https://github.com/Elpacho27/WeatherAPP"
+                  target="_blank"
+                  class="button button--small"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure>
+                <img
+                  src="images/top-view-businesspeople-paying-attention.jpg"
+                  alt="Workstation Manager"
+                />
+              </figure>
+
+              <div class="project-card__content">
+                <h3>Workstation Manager</h3>
+
+                <p>
+                  Desktop Avalonia .NET application used for managing production
+                  workstations and HR processes.
+                </p>
+
+                <ul class="project-tags">
+                  <li>.NET</li>
+                  <li>Avalonia</li>
+                  <li>C#</li>
+                </ul>
+
+                <a
+                  href="https://github.com/Elpacho27/WorkstationManager"
+                  target="_blank"
+                  class="button button--small"
+                >
+                  View Project
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="section-title">Let's Work Together</h2>
+          </header>
+
+          <address class="contact-card">
+            <a href="mailto:patrik27ocelic03@gmail.com">
+              <i class="bi bi-envelope-fill"></i>
+
+              patrik27ocelic03@gmail.com
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/patrik-oceli%C4%87-635b96309/"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i>
+
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/Elpacho27" target="_blank">
+              <i class="bi bi-github"></i>
+
+              GitHub
+            </a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Patrik Ocelić</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
